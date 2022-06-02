@@ -1,1 +1,2 @@
-# sql-from-the-ground-up
+# psychic-fiesta
+sql-pocket-guide
