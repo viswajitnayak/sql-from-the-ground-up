@@ -42,14 +42,9 @@ COMMIT;
 SELECT * FROM EMPLOYEE;
 
 --update statement
-UPDATE company
-SET
-    city = 'MUMBAI'
-WHERE
-    cname = 'ACC';
+UPDATE company SET city = 'MUMBAI' WHERE cname = 'ACC';
 COMMIT;
 SELECT * FROM COMPANY;
-
 
 --Delete statement
 
