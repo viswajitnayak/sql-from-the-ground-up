@@ -28,7 +28,8 @@ CREATE TABLE EMPLOYEE (
 );
 COMMIT;
 SELECT * FROM employee;
-
+--Insert records in COMPANY
+DELETE FROM EMPLOYEE;
 INSERT INTO EMPLOYEE VALUES ( 'Anil',       'Nagpur');
 INSERT INTO EMPLOYEE VALUES ( 'Shankar',    'Mumbai');
 INSERT INTO EMPLOYEE VALUES ( 'Jaya',       'Chennai');
