@@ -147,3 +147,45 @@ SELECT
     last_day(sysdate) - sysdate "Days Left"
 FROM
     dual;    
+    
+    
+SELECT * FROM emp_company;
+DESC EMP_COMPANY;
+INSERT INTO emp_company (ename, cname, jdate) VALUES ('Viswajit', 'Wells', '12-FEB-19');
+COMMIT;
+
+delete from emp_company where salary is null;
+commit;
+
+--CREATE TABLE ztemp5 
+
+CREATE TABLE ztemp5 (
+    a CHAR(10),
+    b VARCHAR2(10)
+);
+COMMIT;
+DESC ztemp5;
+
+
+INSERT INTO ztemp5 VALUES (
+    'anil',
+    'anil'
+);
+commit;
+select * from ztemp5;
+delete from ztemp5;
+
+select * from ztemp5 where a='anil';
+select * from ztemp5 where a='anil  ';
+select * from ztemp5 where b='anil  ';
+
+
+CREATE TABLE ZTEMP6 (
+    a INTERVAL YEAR(2) TO MONTH,
+    b INTERVAL DAY(2) TO SECOND(6)
+);
+COMMIT;
+DESC ZTEMP6;
+
+--drop TABLE ztemp6;
+--commit;
