@@ -7,15 +7,13 @@ COMMIT;
 SELECT * FROM company;
 
 --Insert records in COMPANY
-INSERT INTO company VALUES ( 'DBS',                 'Nagpur');
-INSERT INTO company VALUES ( 'Wells Fargo',         'Hyderabad');
-INSERT INTO company VALUES ( 'Trans Union',         'Pune');
-INSERT INTO company VALUES ( 'Citigroup',           'Pune');
-INSERT INTO company VALUES ( 'Barclays',            'Chennai');
-INSERT INTO company VALUES ( 'JP Morgan',           'Bangalore');
-INSERT INTO company VALUES ( 'BNP Paribas',         'Mumbai');
-INSERT INTO company VALUES ( 'Hoonartek',           'Navi Mumbai');
-INSERT INTO company VALUES ( 'HSBC',                'Kolkata');
+DELETE FROM COMPANY;
+INSERT INTO COMPANY VALUES ( 'ACC', 'Chennai');
+INSERT INTO COMPANY VALUES ( 'TATA','Mumbai');
+INSERT INTO COMPANY VALUES ( 'ACC', 'Nagpur');
+INSERT INTO COMPANY VALUES ( 'CMC', 'Mumbai');
+INSERT INTO COMPANY VALUES ( 'CMC', 'Chennai');
+INSERT INTO COMPANY VALUES ( 'TATA','Delhi');
 COMMIT;
 SELECT * FROM COMPANY;
 
