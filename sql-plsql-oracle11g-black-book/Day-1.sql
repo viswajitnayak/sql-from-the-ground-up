@@ -128,3 +128,22 @@ INSERT INTO EMP_SHIFT VALUES ( 'SUNIL', 'B');
 INSERT INTO EMP_SHIFT VALUES ( 'PRAKASH','C');
 COMMIT;
 SELECT * FROM EMP_SHIFT;
+
+--Using column alias 
+
+SELECT
+    ename employee_name,
+    cname company_name,
+    salary,
+    jdate joining_date
+FROM
+    emp_company;
+
+
+--using dual table    
+SELECT
+    sysdate,
+    last_day(sysdate)           "Last",
+    last_day(sysdate) - sysdate "Days Left"
+FROM
+    dual;    
