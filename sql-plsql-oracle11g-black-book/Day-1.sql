@@ -28,6 +28,7 @@ CREATE TABLE EMPLOYEE (
 );
 COMMIT;
 SELECT * FROM employee;
+
 --Insert records in COMPANY
 DELETE FROM EMPLOYEE;
 INSERT INTO EMPLOYEE VALUES ( 'Anil',       'Nagpur');
@@ -62,7 +63,7 @@ SELECT * FROM COMPANY;
 
 SELECT  cname FROM company;
 
---create table emp_company
+--CREATE TABLE EMP_COMPANY
 CREATE TABLE emp_company (
     ename  VARCHAR2(10),
     cname  VARCHAR2(10),
@@ -70,7 +71,10 @@ CREATE TABLE emp_company (
     jdate  DATE
 );
 COMMIT;
-delete from emp_company;
+
+
+--Insert records in EMP_COMPANY
+DELETE FROM EMP_COMPANY;
 INSERT INTO EMP_COMPANY VALUES ( 'Anil','ACC', 1500.00, '1-MAY-89');
 INSERT INTO EMP_COMPANY VALUES ( 'Shankar','ACC', 2000.00, '10-JUL-90');
 INSERT INTO EMP_COMPANY VALUES ( 'Jaya','CMC', 1800.00, '7-JUN-91');
